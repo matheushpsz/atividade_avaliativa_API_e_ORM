@@ -5,11 +5,11 @@ Este repositório contém a atividade avaliativa da disciplina de Engenharia de 
 # Disciplina
 Engenharia de Software
 Professor: Matheus Santi
-Curso: Ciência da Computação
+Curso: Bacharelado em Ciência da Computação
 Instituição: Unimar (Universidade de Marília)
 
 # Stack Tecnológica
-Framework: Laravel 10.x
+Framework: Laravel 12.15.0
 ORM: Eloquent
 Banco de dados: MySQL (XAMPP)
 Ferramenta de administração: MySQL Workbench
