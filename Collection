@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "3dbe6f19-d96d-4582-ad3d-4e7c88e394cf",
+		"name": "Collection - atividade avaliativa API e ORM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42241416"
+	},
+	"item": [
+		{
+			"name": "Criar departamento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"TI\",\r\n  \"description\": \"Departamento de Tecnologia da Informação\",\r\n  \"location\": \"Prédio 2, Sala 101\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/departments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar departamentos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"TI\",\r\n  \"description\": \"Departamento de Tecnologia da Informação\",\r\n  \"location\": \"Prédio 2, Sala 101\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/departments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar departamento por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"TI\",\r\n  \"description\": \"Departamento de Tecnologia da Informação\",\r\n  \"location\": \"Prédio 2, Sala 101\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/departments/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar departamento",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"RH\",\r\n  \"description\": \"Departamento de Recursos Humanos\",\r\n  \"location\": \"Prédio 1, Sala 202\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/departments/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar funcionário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@example.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora\",\r\n  \"salary\": 4200.00,\r\n  \"department_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar funcionários",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@example.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora\",\r\n  \"salary\": 4200.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar funcionário por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@example.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora\",\r\n  \"salary\": 4200.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar funcionário",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@empresa.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora Sênior\",\r\n  \"salary\": 9000.00,\r\n  \"department_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Funcionários com seus Departamentos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@empresa.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora Sênior\",\r\n  \"salary\": 9000.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees-with-departments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees-with-departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Departamentos com seus Funcionários",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@empresa.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora Sênior\",\r\n  \"salary\": 9000.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/departments-with-employees",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departments-with-employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Departamento de um Funcionário",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@empresa.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora Sênior\",\r\n  \"salary\": 9000.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees/1/department",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"1",
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Funcionários de um Departamento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@empresa.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora Sênior\",\r\n  \"salary\": 9000.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/departments/1/employees",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departments",
+						"1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar funcionário",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@empresa.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora Sênior\",\r\n  \"salary\": 9000.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar departamento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Maria Oliveira\",\r\n  \"email\": \"maria.oliveira@empresa.com\",\r\n  \"phone\": \"11988887777\",\r\n  \"address\": \"Rua Central, 456\",\r\n  \"position\": \"Desenvolvedora Sênior\",\r\n  \"salary\": 9000.00,\r\n  \"department_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/departments/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
