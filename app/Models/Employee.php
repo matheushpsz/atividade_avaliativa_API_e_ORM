@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Department;
 
 class Employee extends Model
 {
@@ -14,5 +15,14 @@ class Employee extends Model
         'address',
         'position',
         'salary',
+        'department_id',
     ];
+
+    public function department() { 
+        return $this->belongsTo( //
+        Department::class,
+        'department_id',
+        'id'
+        ); 
+    }
 }
